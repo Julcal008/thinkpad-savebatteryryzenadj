@@ -38,17 +38,17 @@ Ensure you have the following packages installed on your system:
 
 *  (Optional) Move the script to a directory in your $PATH for easier access, such as ~/.local/bin/ :
 
-            mkdir -p ~/.local/bin
-            mv tdp-menu.sh ~/.local/bin/
+        mkdir -p ~/.local/bin
+        mv tdp-menu.sh ~/.local/bin/
     
 ### 3. Configure Passwordless sudo for RyzenADJ
 
 *   To allow the script to change CPU power limits without asking for your password every time, you need to create a specific sudoers rule.
     Open the sudoers directory safely using visudo:
 
-         Bash
+        Bash
  
-         sudo visudo /etc/sudoers.d/ryzenadj_nopasswd
+        sudo visudo /etc/sudoers.d/ryzenadj_nopasswd
 
 *   Add the following line to the file, save, and exit:
  
