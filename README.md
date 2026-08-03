@@ -60,7 +60,7 @@ Ensure you have the following packages installed on your system:
 
 *   To trigger the menu easily, add a keybinding to your hyprland.conf file
 
-    # in hyprland.conf:
+    ### in hyprland.conf:
 
         # Open TDP Menu with Super + Shift + P
         bind = $mainMod SHIFT, P, exec, ~/.local/bin/tdp-menu.sh  #change ~/.local/bin/tdp-menu.sh to your tdp-menu.sh Path
@@ -78,20 +78,20 @@ Ensure you have the following packages installed on your system:
     ## feel free to change this values to your like.
     ## Don't forget to add "custom/tdp" to your modules-right or modules-left array!
 
-#####   Customization
+###   Customization
 
 *   You can easily modify the script to match your specific CPU's capabilities or your personal preferences.
     Open tdp-menu.sh and edit the Options variable and the corresponding apply_tdp values within the case statement. The values are written in milliwatts (e.g., 12000 = 12 Watts).
 
-# Bash
+## Bash
 
- # Example: Changing the Balanced profile to 15W instead of 12W
+ //Example: Changing the Balanced profile to 15W instead of 12W
  "Balanced (15W)")
     apply_tdp --stapm-limit=15000 --fast-limit=15000 --slow-limit=15000
     echo "Balanced (15W)" > /tmp/perfil_tdp ;;
 
 
-##### Final Notes
+## Final Notes
 
 *  this project was somethin i did to extend the battery life of my thinkpad, you can use it and see if it works for you. This is not going to make any miracle but can help to improve the battery for whatever case you need it
    that could be maximum battery or maximum performance. 
