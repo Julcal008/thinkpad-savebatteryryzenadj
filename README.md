@@ -85,8 +85,8 @@ Ensure you have the following packages installed on your system:
 
 ## Bash
 
- //Example: Changing the Balanced profile to 15W instead of 12W
- "Balanced (15W)")
+     //Example: Changing the Balanced profile to 15W instead of 12W
+    "Balanced (15W)")
     apply_tdp --stapm-limit=15000 --fast-limit=15000 --slow-limit=15000
     echo "Balanced (15W)" > /tmp/perfil_tdp ;;
 
