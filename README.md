@@ -67,7 +67,7 @@ Ensure you have the following packages installed on your system:
 
 ###    Waybar Integration
 
-*    Since the script writes the current profile to /tmp/perfil_tdp, you can easily display your current power profile in Waybar. Add a custom module to your waybar/config file:
+*   Since the script writes the current profile to /tmp/perfil_tdp, you can easily display your current power profile in Waybar. Add a custom module to your waybar/config file:
     ### in waybar/config file:
 
         "custom/tdp": {
